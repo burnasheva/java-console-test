@@ -16,7 +16,7 @@ public class Main {
         }
 
         if (args != null) {
-            if (args[0] != null) {
+            if (args.length > 0 && args[0] != null) {
                 System.err.println(args[0].toString());
             }
         }
