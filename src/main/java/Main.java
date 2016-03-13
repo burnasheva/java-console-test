@@ -16,8 +16,9 @@ public class Main {
         }
 
         if (args != null) {
-            if (args[0] != null){
-            System.err.println(args[0].toString());
+            if (args[0] != null) {
+                System.err.println(args[0].toString());
+            }
         }
     }
 }
