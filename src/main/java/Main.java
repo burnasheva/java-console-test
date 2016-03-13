@@ -15,6 +15,6 @@ public class Main {
             System.err.println("env pwd_url"+System.getenv("pwd_url"));
         }
 
-        System.err.println(args[0]);
+        System.err.println(args[0].toString());
     }
 }
