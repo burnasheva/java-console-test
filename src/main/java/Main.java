@@ -12,9 +12,11 @@ public class Main {
 
         if (System.getenv("pwd") != null && System.getenv("pwd_url") != null) {
             System.err.println("env.pwd" + System.getenv("pwd"));
-            System.err.println("env pwd_url"+System.getenv("pwd_url"));
+            System.err.println("env pwd_url" + System.getenv("pwd_url"));
         }
 
-        System.err.println(args[0].toString());
+        if (args[0] != null){
+            System.err.println(args[0].toString());
+        }
     }
 }
