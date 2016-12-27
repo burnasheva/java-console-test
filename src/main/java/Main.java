@@ -4,21 +4,19 @@
 public class Main {
 
     public static void main(String [] args){
-        System.out.println("123456");
-        System.out.println("http://user:123456@jetbrains.com");
 
-        System.err.println("123456");
-        System.err.println("http://user:123456@jetbrains.com");
-
-        if (System.getenv("pwd") != null && System.getenv("pwd_url") != null) {
-            System.err.println("env.pwd" + System.getenv("pwd"));
-            System.err.println("env pwd_url" + System.getenv("pwd_url"));
+        String configDir = System.getProperty("teamcity.runAs.configDir");
+        if (configDir != null){
+            System.out.println(configDir);
+        } else {
+            System.out.println("System property teamcity.runAs.configDir == null");
         }
 
-        if (args != null) {
-            if (args.length > 0 && args[0] != null) {
-                System.err.println(args[0].toString());
-            }
+        String profileId = System.getProperty("teamcity.runAs.profileId");
+        if (profileId != null){
+            System.out.println(profileId);
+        } else {
+            System.out.println("System property teamcity.runAs.profileId == null");
         }
     }
 }
