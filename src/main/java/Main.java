@@ -18,5 +18,20 @@ public class Main {
         } else {
             System.out.println("System property teamcity.runAs.profileId == null");
         }
+
+        String configDirEnv = System.getenv("teamcity.runAs.configDir");
+        if (configDirEnv != null){
+            System.out.println(configDirEnv);
+        } else {
+            System.out.println("System property teamcity.runAs.configDir == null");
+        }
+
+        String profileIdEnv = System.getenv("teamcity.runAs.profileId");
+        if (profileIdEnv != null){
+            System.out.println(profileIdEnv);
+        } else {
+            System.out.println("System property teamcity.runAs.profileId == null");
+        }
+
     }
 }
