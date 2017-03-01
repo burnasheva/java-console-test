@@ -1,0 +1,3 @@
+[submodule "sbt-test"]
+	path = sbt-test
+	url = https://github.com/burnasheva/sbt-test.git
